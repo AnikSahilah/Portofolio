@@ -33,13 +33,14 @@ function AboutSection() {
 
           <h2 className="text-5xl md:text-7xl font-bold leading-tight">
             Crafting Modern
-            <span className="text-sky-400"> Web Experiences</span>
+            <span className="text-sky-400"> with Modern UI</span>
           </h2>
 
           <p className="text-slate-400 text-lg leading-relaxed mt-8">
-            Transitioning from backend development into modern frontend
-            engineering with a strong focus on interactive UI,
-            clean architecture, and meaningful user experiences.
+            Fullstack web developer with experience building
+            real-world applications using Laravel and CodeIgniter,
+            currently expanding into the modern React ecosystem
+            to create more interactive and engaging user experiences.
           </p>
 
         </motion.div>
@@ -64,18 +65,20 @@ function AboutSection() {
             >
 
               <p className="text-sky-400 text-sm tracking-[0.2em] mb-4">
-                BACKEND ROOTS
+                FULLSTACK EXPERIENCE
               </p>
 
               <h3 className="text-3xl font-bold mb-5 leading-snug">
-                Started from Backend Development
+                Developing Real-World Applications
               </h3>
 
               <p className="text-slate-400 leading-relaxed text-lg">
-                My journey began with PHP, CodeIgniter,
-                and Laravel where I learned backend logic,
-                authentication systems, REST APIs,
-                and scalable application architecture.
+                  Experienced in building complete web applications
+                  using Laravel and CodeIgniter,
+                  including clinic queue systems,
+                  decision support systems,
+                  authentication flows,
+                  and database-driven platforms.
               </p>
 
             </motion.div>
@@ -88,18 +91,19 @@ function AboutSection() {
             >
 
               <p className="text-purple-400 text-sm tracking-[0.2em] mb-4">
-                FRONTEND JOURNEY
+                MODERN REACT ECOSYSTEM
               </p>
 
               <h3 className="text-3xl font-bold mb-5 leading-snug">
-                Exploring Interactive UI Development
+                Exploring Interactive Frontend Engineering
               </h3>
 
               <p className="text-slate-400 leading-relaxed text-lg">
-                Over time, I became interested in
-                creating modern user experiences
-                through React.js, animation,
-                responsive layouts, and clean frontend architecture.
+                  Currently focusing on React.js,
+                  component-based architecture,
+                  smooth animations,
+                  and modern frontend workflows
+                  to create responsive and visually engaging interfaces.
               </p>
 
             </motion.div>
@@ -127,13 +131,14 @@ function AboutSection() {
               </div>
 
               <h3 className="text-2xl font-semibold mb-4">
-                Backend Foundation
+                System Architecture
               </h3>
 
               <p className="text-slate-400 leading-relaxed">
-                Strong understanding of backend systems,
-                API development, authentication,
-                and database architecture.
+                Experienced in developing scalable backend systems,
+                RESTful APIs, authentication flows,
+                and structured database architecture
+                for real-world web applications.
               </p>
 
             </motion.div>
@@ -150,13 +155,14 @@ function AboutSection() {
               </div>
 
               <h3 className="text-2xl font-semibold mb-4">
-                Modern Frontend
+                Interactive UI Development
               </h3>
 
               <p className="text-slate-400 leading-relaxed">
-                Learning React.js, Tailwind CSS,
-                Framer Motion, and modern frontend workflows
-                to create engaging user experiences.
+                Building responsive and interactive interfaces
+                using React.js, Tailwind CSS,
+                and animation-driven user experiences
+                with modern frontend architecture.
               </p>
 
             </motion.div>
@@ -173,13 +179,14 @@ function AboutSection() {
               </div>
 
               <h3 className="text-2xl font-semibold mb-4">
-                Problem Solving
+                Scalable Thinking
               </h3>
 
               <p className="text-slate-400 leading-relaxed">
-                Passionate about building clean,
-                scalable, and meaningful digital products
-                with thoughtful user experiences.
+                Focused on creating scalable applications,
+                maintainable code structures,
+                and efficient solutions
+                that solve real-world problems.
               </p>
 
             </motion.div>

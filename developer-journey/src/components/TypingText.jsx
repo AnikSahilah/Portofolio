@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react'
 
 function TypingText() {
   const texts = [
-    'Backend Developer',
-    'Laravel Enthusiast',
-    'Learning React.js',
-    'Building Modern Web Experiences',
+    'Fullstack Web Developer',
+    'Laravel & React Enthusiast',
+    'Building Scalable Web Applications',
+    'Crafting Modern Interactive UI',
   ]
 
   const [currentText, setCurrentText] = useState('')

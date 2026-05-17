@@ -40,9 +40,11 @@ function HeroSection() {
               <span className="text-sky-400"> Anik Sahilah</span>
             </h1>
 
-            <p className="text-slate-400 mt-6 text-lg leading-relaxed">
-              Backend developer transitioning from PHP & Laravel
-              into modern frontend development using React.js.
+           <p className="text-slate-400 mt-6 text-lg leading-relaxed">
+              Fullstack web developer experienced in building
+              scalable web applications with Laravel and CodeIgniter,
+              currently exploring modern React ecosystems
+              and interactive frontend experiences.
             </p>
 
             <div className="flex gap-4 mt-10 flex-wrap">
