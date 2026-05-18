@@ -1,20 +1,41 @@
-import HeroSection from './sections/HeroSection'
+import { ThemeProvider } from './context/ThemeContext'
 import Navbar from './components/Navbar'
+import HeroSection from './sections/HeroSection'
 import AboutSection from './sections/AboutSection'
-import ProjectsSection from './sections/ProjectsSection'
+import SkillsSection from './sections/SkillsSection'
 import JourneySection from './sections/JourneySection'
+import ProjectsSection from './sections/ProjectsSection'
 import ContactSection from './sections/ContactSection'
+import ScrollToTop from './components/ScrollToTop'
+import LazySection from './components/LazySection'
 
 function App() {
   return (
-    <main className="bg-slate-950 text-white">
-      <Navbar />
-      <HeroSection />
-      <AboutSection />
-      <JourneySection />
-      <ProjectsSection />
-      <ContactSection />
-    </main>
+    <ThemeProvider>
+      <main className="bg-slate-950 dark:bg-slate-950 light:bg-slate-50 text-white dark:text-white light:text-slate-900 transition-colors duration-300 min-h-screen">
+        <Navbar />
+        <HeroSection />
+        <AboutSection />
+
+        <LazySection>
+          <SkillsSection />
+        </LazySection>
+
+        <LazySection>
+          <JourneySection />
+        </LazySection>
+
+        <LazySection>
+          <ProjectsSection />
+        </LazySection>
+
+        <LazySection>
+          <ContactSection />
+        </LazySection>
+
+        <ScrollToTop />
+      </main>
+    </ThemeProvider>
   )
 }
 
