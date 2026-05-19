@@ -36,15 +36,15 @@ const contacts = [
   },
   {
     title: 'LinkedIn',
-    value: 'linkedin.com/in/aniksahilah',
-    link: 'https://linkedin.com/in/aniksahilah',
+    value: 'linkedin.com/in/anik-sahilah',
+    link: 'https://www.linkedin.com/in/anik-sahilah-5485bb253?utm_source=share_via&utm_content=profile&utm_medium=member_android',
     icon: FiLinkedin,
     color: 'sky',
   },
   {
     title: 'Instagram',
     value: '@aniksahilah',
-    link: 'https://instagram.com/aniksahilah',
+    link: 'https://instagram.com/shlh_19',
     icon: FiInstagram,
     color: 'amber',
   },
@@ -126,7 +126,6 @@ function ContactSection() {
 
   return (
     <section
-      id="contact"
       className="relative px-6 py-32 overflow-hidden"
     >
       {/* Glow */}
@@ -163,9 +162,9 @@ function ContactSection() {
         </motion.div>
 
         {/* Contact Cards + Form */}
-        <div className="grid lg:grid-cols-2 gap-12 mt-20">
+        <div className="grid lg:grid-cols-5 gap-8 mt-20">
           {/* Left: Contact Cards */}
-          <div className="space-y-6">
+          <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-4">
             {contacts.map((contact, index) => {
               const colors = colorMap[contact.color]
               const Icon = contact.icon
@@ -176,12 +175,12 @@ function ContactSection() {
                   href={contact.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  initial={{ opacity: 0, x: -40 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.05 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: index * 0.08 }}
                   viewport={{ once: true }}
-                  whileHover={{ y: -4, scale: 1.01 }}
-                  className={`group relative overflow-hidden rounded-2xl border border-white/10 dark:border-white/10 light:border-slate-200 bg-white/5 dark:bg-white/5 light:bg-white backdrop-blur-xl p-6 transition duration-500 ${colors.border}`}
+                  whileHover={{ y: -4, scale: 1.02 }}
+                  className={`group relative overflow-hidden rounded-2xl border border-white/10 dark:border-white/10 light:border-slate-200 bg-white/5 dark:bg-white/5 light:bg-white backdrop-blur-xl p-5 transition duration-500 ${colors.border}`}
                 >
                   {/* Glow Hover */}
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500">
@@ -192,22 +191,22 @@ function ContactSection() {
                   <div className="absolute inset-0 rounded-2xl border border-transparent group-hover:border-sky-400/30 transition duration-500"></div>
 
                   {/* Content */}
-                  <div className="relative z-10 flex items-center gap-5">
-                    <div className={`w-14 h-14 rounded-2xl ${colors.bg} flex items-center justify-center text-2xl ${colors.text} group-hover:scale-110 transition duration-500 flex-shrink-0`}>
-                      <Icon size={24} />
+                  <div className="relative z-10 flex flex-col items-center text-center gap-3">
+                    <div className={`w-12 h-12 rounded-xl ${colors.bg} flex items-center justify-center ${colors.text} group-hover:scale-110 transition duration-500`}>
+                      <Icon size={22} />
                     </div>
 
-                    <div className="min-w-0">
-                      <h3 className="text-lg font-semibold text-white dark:text-white light:text-slate-900 transition-colors duration-300">
+                    <div className="min-w-0 w-full">
+                      <h3 className="text-sm font-semibold text-white dark:text-white light:text-slate-900 transition-colors duration-300">
                         {contact.title}
                       </h3>
-                      <p className="text-slate-400 dark:text-slate-400 light:text-slate-600 truncate transition-colors duration-300">
+                      <p className="text-xs text-slate-400 dark:text-slate-400 light:text-slate-500 truncate transition-colors duration-300 mt-0.5">
                         {contact.value}
                       </p>
                     </div>
 
-                    <div className="ml-auto text-sky-400 opacity-0 group-hover:opacity-100 transition duration-500">
-                      <span className="translate-x-0 group-hover:translate-x-1 inline-block transition duration-300">
+                    <div className="text-sky-400 opacity-0 group-hover:opacity-100 transition duration-500">
+                      <span className="translate-y-0 group-hover:-translate-y-0.5 inline-block transition duration-300 text-xs">
                         →
                       </span>
                     </div>
@@ -223,6 +222,7 @@ function ContactSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
+            className="lg:col-span-3"
           >
             <div className="bg-white/5 dark:bg-white/5 light:bg-white backdrop-blur-sm border border-white/10 dark:border-white/10 light:border-slate-200 rounded-3xl p-8 transition-colors duration-300">
               <h3 className="text-2xl font-bold mb-6 text-white dark:text-white light:text-slate-900 transition-colors duration-300">

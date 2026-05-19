@@ -35,7 +35,6 @@ function SkillsSection() {
 
   return (
     <section
-      id="skills"
       className="relative px-6 py-32 overflow-hidden"
     >
       {/* Glow */}
@@ -97,6 +96,7 @@ function SkillsSection() {
 
         {/* Skills Grid */}
         <motion.div
+          key={activeCategory || 'all'}
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"

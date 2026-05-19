@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react'
  * LazySection — renders children only when the section enters the viewport.
  * Shows a skeleton placeholder while loading.
  */
-function LazySection({ children, className = '', height = '400px' }) {
+function LazySection({ children, className = '', height = '400px', id = '' }) {
   const [isVisible, setIsVisible] = useState(false)
   const ref = useRef(null)
 
@@ -27,7 +27,7 @@ function LazySection({ children, className = '', height = '400px' }) {
   }, [])
 
   return (
-    <div ref={ref} className={className}>
+    <div ref={ref} id={id} className={className}>
       {isVisible ? (
         children
       ) : (

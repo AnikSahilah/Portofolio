@@ -68,7 +68,6 @@ function ProjectsSection() {
   return (
     <>
       <section
-        id="projects"
         className="relative px-6 py-32 overflow-hidden"
       >
         {/* Glow */}

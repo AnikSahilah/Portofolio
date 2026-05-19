@@ -32,7 +32,6 @@ const journeys = [
 function JourneySection() {
   return (
     <section
-      id="journey"
       className="relative px-6 py-32 overflow-hidden"
     >
 

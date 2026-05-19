@@ -17,19 +17,19 @@ function App() {
         <HeroSection />
         <AboutSection />
 
-        <LazySection>
+        <LazySection id="skills">
           <SkillsSection />
         </LazySection>
 
-        <LazySection>
+        <LazySection id="journey">
           <JourneySection />
         </LazySection>
 
-        <LazySection>
+        <LazySection id="projects">
           <ProjectsSection />
         </LazySection>
 
-        <LazySection>
+        <LazySection id="contact">
           <ContactSection />
         </LazySection>
 
